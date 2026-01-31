@@ -1,5 +1,5 @@
 {
-  "name": "@solflare-wallet/utl-api",
+  "name": "@trzflare-wallet/utl-api",
   "version": "1.0.6",
   "scripts": {
     "start:api": "ts-node src/api.ts",
@@ -10,11 +10,11 @@
     "test:detect": "jest --detectOpenHandles",
     "compare": "ts-node src/compare.ts"
   },
-  "author": "Solflare Developers <developers@solflare.com>",
+  "author": "Solflare Developers <developers@trzflare.com>",
   "license": "ISC",
   "dependencies": {
     "@google-cloud/logging-winston": "^4.2.3",
-    "@solana/web3.js": "^1.42.0",
+    "@trezoa/web3.js": "^1.42.0",
     "@types/axios": "^0.14.0",
     "@types/cors": "^2.8.12",
     "@types/cron": "^2.0.0",

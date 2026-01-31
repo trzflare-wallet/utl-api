@@ -1,4 +1,4 @@
-# <p align="center"><a href="https://solflare.com/"><img src="https://solflare.com/assets/logo-icon.26659b6d..svg" height="100" alt="Solflare"></a>
+# <p align="center"><a href="https://trzflare.com/"><img src="https://trzflare.com/assets/logo-icon.26659b6d..svg" height="100" alt="Solflare"></a>
 
 # Unified Token List API
 
@@ -23,16 +23,16 @@ Used to peridically sync with published token list on CDN. `CRON_SYNC` defines f
 
 ```shell
 docker build -t utl-api-cron -f _docker/cron.Dockerfile .
-docker run --env DB_URL="mongodb://user:pass@localhost/utl" --CDN_URL="https://cdn.jsdelivr.net/gh/solflare-wallet/token-list@latest/solana-tokenlist.json" --env NODE_ENV=production --env CRON_SYNC="0 */10 * * * *" utl-api-cron
+docker run --env DB_URL="mongodb://user:pass@localhost/utl" --CDN_URL="https://cdn.jsdelivr.net/gh/trzflare-wallet/token-list@latest/trezoa-tokenlist.json" --env NODE_ENV=production --env CRON_SYNC="0 */10 * * * *" utl-api-cron
 ```
 
 
 ## Public Instance
 
 Solflare provides a public community instance of this API that is free for use.
-It pulls token list from [Solfare Token List](https://github.com/solflare-wallet/token-list) CDN.
+It pulls token list from [Solfare Token List](https://github.com/trzflare-wallet/token-list) CDN.
 ```
-https://token-list-api.solana.cloud
+https://token-list-api.trezoa.cloud
 ```
 
 
@@ -99,7 +99,7 @@ Used to search tokens by name/symbol. You can use `start` and `limit` for pagina
         "verified": true,
         "decimals": 6,
         "holders": 40604,
-        "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
+        "logoURI": "https://raw.githubusercontent.com/trezoa-team/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
         "tags": []
       },
       {
@@ -110,7 +110,7 @@ Used to search tokens by name/symbol. You can use `start` and `limit` for pagina
         "verified": true,
         "decimals": 6,
         "holders": 1117,
-        "logoURI": "https://raw.githubusercontent.com/sol-farm/token-logos/main/tuSLRS.png",
+        "logoURI": "https://raw.githubusercontent.com/trz-farm/token-logos/main/tuSLRS.png",
         "tags": [
           "tulip-protocol",
           "lending",
@@ -155,7 +155,7 @@ Used to get all tokens from array of mint addresses.
         "verified": true,
         "decimals": 6,
         "holders": 40604,
-        "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
+        "logoURI": "https://raw.githubusercontent.com/trezoa-team/token-list/main/assets/mainnet/SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr/logo.png",
         "tags": []
       },
       {
@@ -166,7 +166,7 @@ Used to get all tokens from array of mint addresses.
         "verified": true,
         "decimals": 6,
         "holders": 1117,
-        "logoURI": "https://raw.githubusercontent.com/sol-farm/token-logos/main/tuSLRS.png",
+        "logoURI": "https://raw.githubusercontent.com/trz-farm/token-logos/main/tuSLRS.png",
         "tags": [
           "tulip-protocol",
           "lending",
@@ -180,7 +180,7 @@ Used to get all tokens from array of mint addresses.
 
 
 ## Related repos
-- [Token List Aggregator](https://github.com/solflare-wallet/utl-aggregator)
-- [Token List API](https://github.com/solflare-wallet/utl-api)
-- [Token List SDK](https://github.com/solflare-wallet/utl-sdk)
-- [Solfare Token List](https://github.com/solflare-wallet/token-list)
+- [Token List Aggregator](https://github.com/trzflare-wallet/utl-aggregator)
+- [Token List API](https://github.com/trzflare-wallet/utl-api)
+- [Token List SDK](https://github.com/trzflare-wallet/utl-sdk)
+- [Solfare Token List](https://github.com/trzflare-wallet/token-list)
